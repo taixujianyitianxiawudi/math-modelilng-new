@@ -1,0 +1,79 @@
+\section{模板的基本使用}
+
+要使用 \LaTeX{} 来完成建模论文，首先要确保正确安装一个 \LaTeX{} 的发行版本。
+
+\begin{itemize}
+    \item Mac 下可以使用 Mac\TeX{}
+    \item Linux 下可以使用 \TeX{}Live ；
+    \item windows 下可以使用 \TeX{}Live 或者 Mik\TeX{} ;
+\end{itemize}
+
+具体安装可以参考 \href{https://github.com/OsbertWang/install-latex-guide-zh-cn/releases/}{Install-LaTeX-Guide-zh-cn} 或者其它靠谱的文章。另外可以安装一个易用的编辑器，例如 \href{https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/}{\TeX{}studio} 。
+
+使用该模板前，请阅读模板的使用说明文档。下面给出模板使用的大概样式。
+
+\begin{tcode}
+    \documentclass{cumcmthesis}
+    %\documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页
+
+    \title{论文题目}
+    \tihao{A}            % 题号
+    \baominghao{4321}    % 报名号
+    \schoolname{你的大学}
+    \membera{成员A}
+    \memberb{成员B}
+    \memberc{成员C}
+    \supervisor{指导老师}
+    \yearinput{2017}     % 年
+    \monthinput{08}      % 月
+    \dayinput{22}        % 日
+
+    \begin{document}
+        \maketitle
+        \begin{abstract}
+            摘要的具体内容。
+            \keywords{关键词1\quad  关键词2\quad   关键词3}
+        \end{abstract}
+        \tableofcontents
+        \section{问题重述}
+        \subsection{问题的提出}
+        \section{模型的假设}
+        \section{符号说明}
+        \begin{center}
+            \begin{tabular}{cc}
+                \hline
+                \makebox[0.3\textwidth][c]{符号}	&  \makebox[0.4\textwidth][c]{意义} \\ \hline
+                D	    & 木条宽度（cm） \\ \hline
+            \end{tabular}
+        \end{center}
+        \section{问题分析}
+        \section{总结}
+        \begin{thebibliography}{9}%宽度9
+            \bibitem{bib:one} ....
+        \end{thebibliography}
+        \begin{appendices}
+            附录的内容。
+        \end{appendices}
+    \end{document}
+\end{tcode}
+
+根据要求，电子版论文提交时需去掉封面和编号页。可以加上 \verb|withoutpreface|  选项来实现，即：
+\begin{tcode}
+    \documentclass[withoutpreface]{cumcmthesis}
+\end{tcode}
+这样就能实现了。打印的时候有超链接的地方不需要彩色，可以加上 \verb|bwprint| 选项。
+
+另外目录也是不需要的，将 \verb|\tableofcontents| 注释或删除，目录就不会出现了。
+
+团队的信息填入指定的位置，并且确保信息的正确性，以免因此白忙一场。
+
+编译记得使用 \verb|xelatex|，而不是用 \verb|pdflatex|。在命令行编译的可以按如下方式编译：
+\begin{tcode}
+	xelatex example
+\end{tcode}
+或者使用 \verb|latexmk| 来编译，更推荐这种方式。
+\begin{tcode}
+	latexmk -xelatex example
+\end{tcode}
+
+下面给出写作与排版上的一些建议。
