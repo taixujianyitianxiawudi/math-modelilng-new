@@ -472,11 +472,11 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\normalfont\large\bfseries}}
+	{\centering\normalfont\large\bfseries\heiti}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\normalfont\normalsize\bfseries\heiti\zihao{4}}}
+	{\centering\normalfont\normalsize\bfseries\heiti\zihao{4}}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
 	{3.25ex \@plus1ex \@minus.2ex}%
 	{-1em}%
