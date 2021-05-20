@@ -44,7 +44,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 \RequirePackage{bm}
-%\RequirePackage{titletoc}
+\RequirePackage{titletoc}
 % 设置颜色
 \RequirePackage{xcolor}
 % 插入图片
