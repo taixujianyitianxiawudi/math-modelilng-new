@@ -210,7 +210,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	format=hang,   % 标题从第二行开始都有缩进, 应该和 justification=raggedright 的效果一样.
 	labelsep=quad, % 分隔符是一个空格
 	font={song,minusfour,bf}, % 表的字体, 宋体小四
-	position=top % position=bottom, 不代表标题放在下面, 标题仍放在你放\caption的位置.
+	position=bottom % position=bottom, 不代表标题放在下面, 标题仍放在你放\caption的位置.
 }
 % 列表环境设置
 \setlist{%
