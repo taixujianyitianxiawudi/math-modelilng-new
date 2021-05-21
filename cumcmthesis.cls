@@ -138,7 +138,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 %% Document Layout
 % 页面布局
 \geometry{top=25mm,bottom=25mm,left=25mm,right=25mm}
-\renewcommand*{\baselinestretch}{1}%文字行距
+\renewcommand*{\baselinestretch}{1.3}%文字行距
 % 修改tabular 环境, 设置表格中的行间距为正文行间距.
 \let\mcm@oldtabular\tabular
 \let\mcm@endoldtabular\endtabular
@@ -472,11 +472,11 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\centering\normalfont\large\bfseries\heiti}}
+	{\normalfont\large\bfseries\heiti}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\centering\normalfont\normalsize\bfseries\heiti\zihao{4}}}
+	{\normalfont\normalsize\heiti}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
 	{3.25ex \@plus1ex \@minus.2ex}%
 	{-1em}%
