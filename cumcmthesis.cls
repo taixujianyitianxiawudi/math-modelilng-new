@@ -49,6 +49,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \RequirePackage{xcolor}
 % 插入图片
 \RequirePackage{graphicx}
+\RequirePackage{svg}
 \RequirePackage{float}
 % 表格
 \RequirePackage{array}
