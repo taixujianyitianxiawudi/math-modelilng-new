@@ -1,6 +1,6 @@
 clc; clear; close all;
 Y = xlsread('附件1.xlsx', 'sheet1', 'B2:K5001');
-X = xlsread('附件2改.xls');
+X = xlsread('附件2新.xls');
 
 %%管道1
 y = Y(:, 1); %第i列
@@ -308,7 +308,7 @@ end
 
 %%画图
 for i = 1:10
-    x = 2:153;
+    x = 1:153;
     y = B(i, :);
     plot(x, y);
     hold on
